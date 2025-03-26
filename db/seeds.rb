@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+
+puts "Deleting existing data..."
+Author.destroy_all
+Publisher.destroy_all
+Genre.destroy_all
